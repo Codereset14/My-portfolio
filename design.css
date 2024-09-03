@@ -1,0 +1,162 @@
+/* To add a font, background color and padding around the page */
+body{
+    background-image: url(BG.jfif);
+    font-family: sans-serif;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+}
+/* Personalization of the profile picture */
+img {
+  width: 200;
+  height: 200;
+  border-radius: 100px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  object-fit: cover;
+  padding: 20px;
+  animation: fade_in 2s ease-in 1;
+  animation: left_to_ori 0.5s ease-in  1;
+}
+/* To centralize the menu links */
+#menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add this line */
+  margin: 20px auto;
+  text-align: center;
+ height: 50px;
+}
+/* To space out the menu links. */
+.menu_link{
+  
+  margin-right: 50px;
+  margin-top: 50%;
+  
+}
+/* To visibly seperate sections of the page */
+hr{
+  height: 3px;
+  border-color:rgb(135, 116, 177) ;
+}
+/* To give each section a modern curved square look. */
+.circle_square{
+  padding: 20px;
+  background: linear-gradient(90deg, white, black);
+  border-radius: 50px;
+  border-style: dotted;
+  border-width: 5px;
+  border-color: blue;
+
+}
+/* To remove the line under links for a modern look. */
+a{
+  text-decoration-line:none;
+}
+
+
+.large_button {
+  
+  font-size: 14px;
+
+}
+#jump_top{
+  padding: 10px;
+  text-align: center;
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  width: 109px;
+  margin: 20px auto; /* This line centers the element */
+  
+} 
+#centralize{
+  text-align: center;
+  display: inline-block;
+}
+#cntrlz2{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.blur{
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.5);
+
+  
+}
+#blur_body{
+  backdrop-filter: blur(2px);
+  background-color: rgba(17, 20, 173, 0.5);
+  border-radius: 120px;
+}
+input{
+  height: 40px;
+  font-size: 18px;
+
+}
+.submit{
+  height: 40px;
+  width: 50px;
+  font-size: 18px;
+}
+.seperate{
+  
+  background-color: rgb(255, 255, 255);
+  border-radius: 7%;
+  margin-right: 50px;
+  color: black;
+  font-size: 20px;
+}
+.link_color{
+  color: rgb(65, 52, 52);
+  font-weight: 700;
+}
+.link_color1{
+  color: rgb(218, 144, 32);
+  font-weight: 900;
+}
+.link_color2{
+  color: yellow;
+  font-weight: 900;
+}
+.link_color3{
+  color: red;
+  font-weight:900;
+}
+a.link_color:hover{
+color: red;
+}
+@keyframes fade_in{
+  from{opacity: 0;}
+  to{opacity: 1;} 
+}
+@keyframes left_to_ori{
+  0%{
+  transform: translateX(-100%)
+}
+  
+  100%{
+  transform: translateX( 0%)}
+  
+}
+
+@keyframes right_to_ori{
+  0%{
+    transform:translateX(100%)
+  }
+  100%{
+    transform:translateX(0%)
+  }
+}
+
+.top_animation{
+  animation: left_to_ori 0.5s ease-in 1;
+}
+.middle_animation{
+  animation: right_to_ori 0.5s ease-in 0.5s 1;}
+.last_animation{
+  animation: left_to_ori 0.5s ease-in 1s 1;
+}
